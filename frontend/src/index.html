@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <nav class="navigation white z-depth-0 d-flex-row">
+      <div class="logo-wrapper"><a href="#"><img src="./assets/Logo_Kodland.png" alt="logo image"></a></div>
+      <div><span>Блог</span></div>
+      <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="mail"><img src="./assets/mail_icon.svg" alt="mail icon"></a></li>
+          <li class="nav-item"><a href="#" class="user"><img src="./assets/user_icon.png" alt="user icon"></a></li>
+          <li class="nav-item"><a href="#" class="logout"><img src="./assets/default_logout_icon.svg" alt="logout icon"></a></li>
+      </ul>
+  </nav>
+
+  <div class="main-article container black-text">
+      <div class="row">
+        <div class="main-article-content col s7">
+            <div class="main-article-socials d-flex-row align-items-center">
+                <span>NEW</span>
+                <div class="likes-container d-flex-row align-items-center">
+                    <img src="./assets/likes_icon.svg" alt="likes icon">
+                    <span>25</span>
+                </div>
+                <div class="comments-container d-flex-row align-items-center">
+                    <img src="./assets/comments_icon.svg" alt="comments icon">
+                    <span>25</span>
+                </div>
+                <div class="views-container d-flex-row align-items-center">
+                    <img src="./assets/views_icon.svg" alt="views icon">
+                    <span>25</span>
+                </div>
+            </div>
+            <h3>Почему подросткам стоит изучать программирование</h1>
+            <p>
+                Объясняем почему словосочетание «программирование для подростков» не должно вызывать скептическую улыбку и какие полезные навыки приобретают ребята, изучая программирование.
+            </p>
+            <a class="button">Читать</a>
+        </div>
+        <div class="main-article-img col s5">
+            <img src="./assets/main_article_img.svg" alt="article image">
+        </div>
+      </div>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="articles container black-text">
+      <div class="articles-header d-flex-row align-items-center">
+          <h3>Другие статьи</h3>
+          <img src="./assets/filter_icon.svg" alt="filter icon">
+      </div>
+      <div class="row">
+          <div class="col s4">
+            <div class="article card z-depth-0 d-flex-column align-items-center">
+                <span class="align-self-start">28 июня 2019 18:34</span>
+                <img src="./assets/article_img.svg" alt="article img">
+                <span class="highlighted-text">Профессии будущего</span>
+                <h5>Как программирование развивает привычные отрасли</h5>
+                <div class="article-socials d-flex-row align-self-start">
+                  <div class="likes-container d-flex-row align-items-center">
+                      <img src="./assets/likes_icon.svg" alt="likes icon">
+                      <span>25</span>
+                  </div>
+                  <div class="comments-container d-flex-row align-items-center">
+                      <img src="./assets/comments_icon.svg" alt="comments icon">
+                      <span>25</span>
+                  </div>
+                  <div class="views-container d-flex-row align-items-center">
+                      <img src="./assets/views_icon.svg" alt="views icon">
+                      <span>25</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="add-article-container container black-text d-none">
+    <div class="add-article-header d-flex-row align-items-center">
+        <h3>Добавить статью</h3>
+    </div>
+    <form class="d-flex-row d-flex-wrap" name="articleForm" id="input-article-form">
+
+        <div class="input-container">
+            <input id="input-article-title" type="text" placeholder="Введите название статьи" class="text-input">
+        </div>
+
+        <button class="button" type="submit" id="send-button">
+          Отправить
+        </button>
+
+        <div class="editor-container">
+            <div id="editor"></div>
+        </div>
+
+        <div class="image-container">
+            <div class="card z-depth-0 d-flex-column align-items-center">
+                <h5>Загрузить изображение</h5>
+                <img class="responsive-img" src="./assets/article_img.svg" alt="uploaded image">
+                <div class="article-img-input-container">
+                    <input type="file" id="article-img-input">
+                    <label for="article-img-input" class="button">Выбрать</label>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+  </div>
+
+
+</body>
+</html>
